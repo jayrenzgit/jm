@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FiInstagram, FiFacebook, FiYoutube, FiPhone } from 'react-icons/fi';
 
 export function Contact() {
