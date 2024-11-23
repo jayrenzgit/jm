@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import * as path from 'path' // Correct import for path
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'index.html'), // Correct path.resolve usage
+        main: resolve(__dirname, 'index.html'),
       },
     },
   },
@@ -15,5 +15,5 @@ export default defineConfig({
     include: ['react', 'react-dom', 'react-router-dom'],
   },
   publicDir: 'public',
-  base: '/jm/', // Use your actual repository name here
+  base: '/jm/',  // Set base path to your repository name
 })
