@@ -15,4 +15,4 @@ export default defineConfig({
     include: ['react', 'react-dom', 'react-router-dom'],
   },
   publicDir: 'public',
-})
+}) 
